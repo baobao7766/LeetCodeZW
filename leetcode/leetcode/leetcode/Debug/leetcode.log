@@ -1,20 +1,21 @@
-﻿Build started 2015/4/15 0:18:10.
+﻿Build started 2015/4/18 1:37:23.
      1>Project "E:\Projects\LeetcodeZW\leetcode\leetcode\leetcode\leetcode.vcxproj" on node 2 (build target(s)).
-     1>PrepareForBuild:
-         Creating directory "E:\Projects\LeetcodeZW\leetcode\leetcode\Debug\".
-       InitializeBuildStatus:
+     1>InitializeBuildStatus:
          Creating "Debug\leetcode.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Number_of_Islands.cpp
-         Number_of_Islands.cpp
-     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(7): error C2059: syntax error : '{'
-     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(7): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
-     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(11): error C2065: 'dir' : undeclared identifier
-     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(12): error C2065: 'dir' : undeclared identifier
-     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(13): warning C4018: '<' : signed/unsigned mismatch
-     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(13): warning C4018: '<' : signed/unsigned mismatch
-     1>Done Building Project "E:\Projects\LeetcodeZW\leetcode\leetcode\leetcode\leetcode.vcxproj" (build target(s)) -- FAILED.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Projects\LeetcodeZW\leetcode\leetcode\Debug\leetcode.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\leetcode.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Projects\LeetcodeZW\leetcode\leetcode\Debug\leetcode.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Projects\LeetcodeZW\leetcode\leetcode\Debug\leetcode.lib" /MACHINE:X86 Debug\Main.obj
+     1>Main.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         leetcode.vcxproj -> E:\Projects\LeetcodeZW\leetcode\leetcode\Debug\leetcode.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Projects\LeetcodeZW\leetcode\leetcode\Debug\leetcode.exe;#1" /manifest Debug\leetcode.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\leetcode.unsuccessfulbuild".
+         Touching "Debug\leetcode.lastbuildstate".
+     1>Done Building Project "E:\Projects\LeetcodeZW\leetcode\leetcode\leetcode\leetcode.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.53
+Time Elapsed 00:00:00.79

@@ -38,7 +38,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -74,10 +74,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Number_of_Islands.cpp" />
+    <None Include="logs.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="logs.txt" />
+    <ClInclude Include="Linked_List_1.h" />
+    <ClInclude Include="Number_of_Islands.h" />
+    <ClInclude Include="RemoveDuplicatesList2.h" />
+    <ClInclude Include="SwapNodesInPairs.h" />
+    <ClInclude Include="TwoSum.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
