@@ -1,0 +1,20 @@
+﻿Build started 2015/4/15 0:18:10.
+     1>Project "E:\Projects\LeetcodeZW\leetcode\leetcode\leetcode\leetcode.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "E:\Projects\LeetcodeZW\leetcode\leetcode\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\leetcode.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Number_of_Islands.cpp
+         Number_of_Islands.cpp
+     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(7): error C2059: syntax error : '{'
+     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(7): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(11): error C2065: 'dir' : undeclared identifier
+     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(12): error C2065: 'dir' : undeclared identifier
+     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(13): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\projects\leetcodezw\leetcode\leetcode\leetcode\number_of_islands.cpp(13): warning C4018: '<' : signed/unsigned mismatch
+     1>Done Building Project "E:\Projects\LeetcodeZW\leetcode\leetcode\leetcode\leetcode.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.53
