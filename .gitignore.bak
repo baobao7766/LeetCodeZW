@@ -17,12 +17,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#Visual Studio 2010
-*.sdf
-*.suo
-\\leetcode\\leetcode\\ipch*
-\\leetcode\\leetcode\\Debug*
-
 # =========================
 # Operating System Files
 # =========================
