@@ -80,6 +80,7 @@
     <ClInclude Include="Linked_List_1.h" />
     <ClInclude Include="Number_of_Islands.h" />
     <ClInclude Include="RemoveDuplicatesList2.h" />
+    <ClInclude Include="SortList.h" />
     <ClInclude Include="SwapNodesInPairs.h" />
     <ClInclude Include="TwoSum.h" />
   </ItemGroup>

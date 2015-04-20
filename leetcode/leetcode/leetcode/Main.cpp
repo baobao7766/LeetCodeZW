@@ -5,12 +5,12 @@
 //======================================================
 
 #include <vector>
-#include <iostream>
+#include <iostream>		// cout, cin
 #include <string>
 #include <map>
-#include <assert.h>
+#include <assert.h>		// assert()
 
-#include "SwapNodesInPairs.h"
+#include "SortList.h"
 
 #define NULL 0
 
@@ -18,8 +18,9 @@ using namespace std;
 
 int main ()
 {
+	/* definition */
 	ListNode *pHead, *pRear, *pNew;
-	int data[] = {1,2,3,4};
+	int data[] = {3,2,1,4,1};
 	int index = 0;
 	while(index!=int(sizeof(data)/sizeof(int))){
 		pNew = new ListNode(data[index]);
@@ -31,21 +32,20 @@ int main ()
 		pRear = pNew;
 		++index;
 	}
-	/* print */
+
+	/* processing */
 	ListNode *L = pHead;
 	Solution solution;
-	L = solution.swapPairs(L);
+	L = solution.sortList(L);
+
+	/* print */
 	assert(L != NULL);
 	while(L != NULL){
 		cout << L->val << '\t';
 		L = L->next;
 	}
 	cout << endl;
+
 	system("pause");
 	return 0;
 }
-
-
-
-
-
