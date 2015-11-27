@@ -1,0 +1,113 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+In this document, codes are writing directly into the Text editing area.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+1. Remove Duplicates from Sorted Array 
+
+Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
+Do not allocate extra space for another array, you must do this in place with constant memory.
+For example,
+Given input array nums = [1,1,2],
+Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. 
+It doesn't matter what you leave beyond the new length.
+
+Accept:
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if(nums.empty() || nums.size()==1) return nums.size();
+        int count = 1;
+        int n = 0;
+        vector<int>::iterator it_nums = nums.begin();
+        while(it_nums != nums.end()-1){
+            if(*it_nums != *(it_nums+1)){
+                ++count;
+                ++it_nums;
+            }else{
+                nums.erase(it_nums);
+            }
+        }
+        return count;
+    }
+};
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2. Remove Duplicates from Sorted Array II 
+
+Follow up for "Remove Duplicates":
+What if duplicates are allowed at most twice?
+For example,
+Given sorted array nums = [1,1,1,2,2,3],
+Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. 
+It doesn't matter what you leave beyond the new length.
+
+Accept;
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if(nums.empty()||nums.size()==1||nums.size()==2) return nums.size();
+        int count = 2;
+        vector<int>::iterator it_nums = nums.begin() + 2;
+        while(it_nums != nums.end()){
+            if(*it_nums == *(it_nums-1)){
+                if(*it_nums == *(it_nums-2)){
+                    nums.erase(it_nums);
+                    if(count == int(nums.size())){
+                        return count;
+                    }
+                }else{
+                    ++it_nums;
+                    ++count;
+                }//end if-else
+            }else if(it_nums != nums.end()-1){
+                it_nums += 2;
+                count += 2;
+            }else{
+                return ++count;
+            }//end if-else
+        }//end while
+        return count;
+    }
+};
+////////////////////////////////////////////////////////////////////////////////////////////////////
+3. Search in Rotated Sorted Array
+
+Suppose a sorted array is rotated at some pivot unknown to you beforehand.
+(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
+You are given a target value to search. If found in the array return its index, otherwise return -1.
+You may assume no duplicate exists in the array.
+
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+        if(nums.empty()) return -1;
+        if(nums.size()==1)
+            return (nums[0]==target? 0:-1);
+        int index = 0;
+        int iend = int(nums.size()-1);
+        
+        if(nums[0] == target) return 0;
+        if(nums[index] < target ){
+            ++index;
+            while(index <= iend){
+                if(nums[index] == target) 
+                    return index;
+                if(nums[index] < nums[index-1])
+                    return -1;
+                ++index;
+            }//end while
+        }else{
+            if(nums[iend] == target) return iend;
+            index = iend-1;
+            while(index > 0){
+                if(nums[index] == target) return index;
+                if(nums[index] > nums[index + 1])
+                    return -1;
+                --index;
+            }//end while
+        }//end if-else
+        return -1;
+    }
+};
